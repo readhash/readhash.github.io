@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.2/cerulean/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.2/darkly/bootstrap.min.css">
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
@@ -22,7 +21,23 @@
         // تفعيل مكتبات القرآن والإنجيل والتوراة
         function activateLibraries() {
             console.log('تفعيل مكتبات القرآن والإنجيل والتوراة');
-            // تأكد من التفعيل
+            activateQuranLibrary();
+            activateBibleLibrary();
+            activateTorahLibrary();
+        }
+
+        function activateQuranLibrary() {
+            console.log('تفعيل مكتبة القرآن');
+            // ...إضافة أكواد التفعيل هنا...
+        }
+
+        function activateBibleLibrary() {
+            console.log('تفعيل مكتبة الإنجيل');
+            // ...إضافة أكواد التفعيل هنا...
+        }
+
+        function activateTorahLibrary() {
+            console.log('تفعيل مكتبة التوراة');
             // ...إضافة أكواد التفعيل هنا...
         }
 
@@ -56,28 +71,58 @@
             <h2>قرآن</h2>
             <p>محتوى قسم القرآن.</p>
             <script>
-                // تفعيل مكتبة القرآن
-                console.log('تفعيل مكتبة القرآن');
-                // ...إضافة أكواد التفعيل هنا...
+                activateQuranLibrary();
             </script>
+            <section>
+                <h3>القاء</h3>
+                <p>محتوى قسم القاء من مكتبة مفتوحة المصدر.</p>
+            </section>
+            <section>
+                <h3>التفسير</h3>
+                <p>محتوى قسم التفسير من مكتبة مفتوحة المصدر.</p>
+            </section>
+            <section>
+                <h3>السيرة</h3>
+                <p>محتوى قسم السيرة من مكتبة مفتوحة المصدر.</p>
+            </section>
+            <section>
+                <h3>الفقه</h3>
+                <p>محتوى قسم الفقه من مكتبة مفتوحة المصدر.</p>
+            </section>
         </section>
         <section>
             <h2>إنجيل</h2>
             <p>محتوى قسم الإنجيل.</p>
             <script>
-                // تفعيل مكتبة الإنجيل
-                console.log('تفعيل مكتبة الإنجيل');
-                // ...إضافة أكواد التفعيل هنا...
+                activateBibleLibrary();
             </script>
+            <section>
+                <h3>الوثوقية</h3>
+                <p>محتوى قسم الوثوقية داخل الإنجيل.</p>
+            </section>
+            <section>
+                <h3>كاثوليك</h3>
+                <p>محتوى قسم الكاثوليك.</p>
+            </section>
+            <section>
+                <h3>أرثوذكس</h3>
+                <p>محتوى قسم الأرثوذكس.</p>
+            </section>
+            <section>
+                <h3>بروتستانت</h3>
+                <p>محتوى قسم البروتستانت.</p>
+            </section>
         </section>
         <section>
             <h2>توراة</h2>
             <p>محتوى قسم التوراة.</p>
             <script>
-                // تفعيل مكتبة التوراة
-                console.log('تفعيل مكتبة التوراة');
-                // ...إضافة أكواد التفعيل هنا...
+                activateTorahLibrary();
             </script>
+            <section>
+                <h3>الأكثر مصداقية</h3>
+                <p>محتوى قسم الأكثر مصداقية داخل التوراة.</p>
+            </section>
         </section>
         <section>
             <h2>مناظرات</h2>
