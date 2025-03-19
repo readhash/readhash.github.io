@@ -5,4 +5,8 @@ title: Quran
 
 # Quran
 
-Content for the Quran section.
+هذا القسم مخصص للقرآن الكريم.
+
+# نشر الموقع
+
+[انقر هنا لنشر الموقع](https://github.com/username/repository)

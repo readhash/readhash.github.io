@@ -12,3 +12,4 @@ This is the home page of your blog.
 - [Quran](quran.md)
 - [Bible](bible.md)
 - [Torah](torah.md)
+- [README](README.md) <!-- إضافة رابط إلى README.md -->

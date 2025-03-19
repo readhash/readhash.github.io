@@ -5,4 +5,4 @@ title: Bible
 
 # Bible
 
-Content for the Bible section.
+هذا القسم مخصص للكتاب المقدس.

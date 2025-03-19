@@ -5,4 +5,4 @@ title: Torah
 
 # Torah
 
-Content for the Torah section.
+هذا القسم مخصص للتوراة.

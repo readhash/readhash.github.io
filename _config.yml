@@ -1,3 +1,5 @@
-# ...existing code...
-theme: jekyll-theme-sakura
-# ...existing code...
+title: Quran
+description: >
+  هذا القسم مخصص للقرآن الكريم.
+theme: jekyll-theme-minimal
+enabled: true
