@@ -8,6 +8,7 @@ export default function HomeScreen({ navigation }) {
       <Button title="Quran" onPress={() => navigation.navigate('Quran')} />
       <Button title="Bible" onPress={() => navigation.navigate('Bible')} />
       <Button title="Torah" onPress={() => navigation.navigate('Torah')} />
+      <Button title="Hadith" onPress={() => navigation.navigate('Hadith')} /> {/* زر جديد */}
     </View>
   );
 }
