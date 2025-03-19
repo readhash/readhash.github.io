@@ -60,86 +60,147 @@
         window.addEventListener('load', loadChanges);
         window.addEventListener('input', saveChanges);
     </script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        header, footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav button {
+            margin: 0.5em;
+            padding: 0.5em 1em;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        nav button:hover {
+            background-color: #0056b3;
+        }
+        section {
+            margin: 2em 0;
+        }
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1em auto;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>مرحبًا بكم في صفحتنا الرئيسية</h1>
     </header>
     <main>
-        <p>هذه الصفحة تحتوي على بعض المحتويات الأساسية.</p>
-        <section>
-            <h2>قرآن</h2>
-            <p>محتوى قسم القرآن.</p>
-            <script>
-                activateQuranLibrary();
-            </script>
+        <nav>
+            <button onclick="showSection('islamic')">الإسلامي</button>
+            <button onclick="showSection('christian')">المسيحي</button>
+            <button onclick="showSection('jewish')">اليهودي</button>
+            <button onclick="showSection('debates')">المناظرات</button>
+            <button onclick="showSection('blogs')">المدونات</button>
+            <button onclick="showSection('volunteer')">التطوع</button>
+        </nav>
+        <section id="islamic" style="display:none;">
+            <h2>الإسلامي</h2>
+            <img src="https://example.com/quran.jpg" alt="قرآن">
             <section>
-                <h3>القاء</h3>
-                <p>محتوى قسم القاء من مكتبة مفتوحة المصدر.</p>
-            </section>
-            <section>
-                <h3>التفسير</h3>
-                <p>محتوى قسم التفسير من مكتبة مفتوحة المصدر.</p>
-            </section>
-            <section>
-                <h3>السيرة</h3>
-                <p>محتوى قسم السيرة من مكتبة مفتوحة المصدر.</p>
-            </section>
-            <section>
-                <h3>الفقه</h3>
-                <p>محتوى قسم الفقه من مكتبة مفتوحة المصدر.</p>
-            </section>
-        </section>
-        <section>
-            <h2>إنجيل</h2>
-            <p>محتوى قسم الإنجيل.</p>
-            <script>
-                activateBibleLibrary();
-            </script>
-            <section>
-                <h3>الوثوقية</h3>
-                <p>محتوى قسم الوثوقية داخل الإنجيل.</p>
-            </section>
-            <section>
-                <h3>كاثوليك</h3>
-                <p>محتوى قسم الكاثوليك.</p>
-            </section>
-            <section>
-                <h3>أرثوذكس</h3>
-                <p>محتوى قسم الأرثوذكس.</p>
-            </section>
-            <section>
-                <h3>بروتستانت</h3>
-                <p>محتوى قسم البروتستانت.</p>
+                <h3>قرآن</h3>
+                <p>محتوى قسم القرآن.</p>
+                <script>
+                    activateQuranLibrary();
+                </script>
+                <section>
+                    <h4>القاء</h4>
+                    <p>محتوى قسم القاء من مكتبة مفتوحة المصدر.</p>
+                </section>
+                <section>
+                    <h4>التفسير</h4>
+                    <p>محتوى قسم التفسير من مكتبة مفتوحة المصدر.</p>
+                </section>
+                <section>
+                    <h4>السيرة</h4>
+                    <p>محتوى قسم السيرة من مكتبة مفتوحة المصدر.</p>
+                </section>
+                <section>
+                    <h4>الفقه</h4>
+                    <p>محتوى قسم الفقه من مكتبة مفتوحة المصدر.</p>
+                </section>
             </section>
         </section>
-        <section>
-            <h2>توراة</h2>
-            <p>محتوى قسم التوراة.</p>
-            <script>
-                activateTorahLibrary();
-            </script>
+        <section id="christian" style="display:none;">
+            <h2>المسيحي</h2>
+            <img src="https://example.com/bible.jpg" alt="إنجيل">
             <section>
-                <h3>الأكثر مصداقية</h3>
-                <p>محتوى قسم الأكثر مصداقية داخل التوراة.</p>
+                <h3>إنجيل</h3>
+                <p>محتوى قسم الإنجيل.</p>
+                <script>
+                    activateBibleLibrary();
+                </script>
+                <section>
+                    <h4>الوثوقية</h4>
+                    <p>محتوى قسم الوثوقية داخل الإنجيل.</p>
+                </section>
+                <section>
+                    <h4>كاثوليك</h4>
+                    <p>محتوى قسم الكاثوليك.</p>
+                </section>
+                <section>
+                    <h4>أرثوذكس</h4>
+                    <p>محتوى قسم الأرثوذكس.</p>
+                </section>
+                <section>
+                    <h4>بروتستانت</h4>
+                    <p>محتوى قسم البروتستانت.</p>
+                </section>
             </section>
         </section>
-        <section>
-            <h2>مناظرات</h2>
+        <section id="jewish" style="display:none;">
+            <h2>اليهودي</h2>
+            <img src="https://example.com/torah.jpg" alt="توراة">
+            <section>
+                <h3>توراة</h3>
+                <p>محتوى قسم التوراة.</p>
+                <script>
+                    activateTorahLibrary();
+                </script>
+                <section>
+                    <h4>الأكثر مصداقية</h4>
+                    <p>محتوى قسم الأكثر مصداقية داخل التوراة.</p>
+                </section>
+            </section>
+        </section>
+        <section id="debates" style="display:none;">
+            <h2>المناظرات</h2>
             <p>محتوى قسم المناظرات.</p>
         </section>
-        <section>
-            <h2>تطوع</h2>
-            <p>محتوى قسم التطوع.</p>
+        <section id="blogs" style="display:none;">
+            <h2>المدونات</h2>
+            <p>محتوى قسم المدونات.</p>
         </section>
-        <section>
-            <h2>عمل خيري</h2>
-            <p>محتوى قسم العمل الخيري.</p>
+        <section id="volunteer" style="display:none;">
+            <h2>التطوع</h2>
+            <p>محتوى قسم التطوع.</p>
         </section>
     </main>
     <footer>
         <p>حقوق النشر © 2023</p>
         <button onclick="saveChanges()">حفظ التغييرات</button>
     </footer>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main > section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
