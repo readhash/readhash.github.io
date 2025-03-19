@@ -25,20 +25,40 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-## Instructions to Save Files on GitHub Pages
+# صفحة رئيسية
 
-1. تأكد من أنك قمت بتثبيت Git على جهازك.
-2. افتح سطر الأوامر وانتقل إلى دليل المشروع الخاص بك.
-3. أضف جميع الملفات التي تريد حفظها باستخدام الأمر:
-   ```sh
-   git add .
-   ```
-4. قم بكتابة رسالة الالتزام باستخدام الأمر:
-   ```sh
-   git commit -m "حفظ الملفات على GitHub Pages"
-   ```
-5. ادفع التغييرات إلى المستودع الخاص بك على GitHub باستخدام الأمر:
-   ```sh
-   git push origin main
-   ```
-6. تأكد من تفعيل GitHub Pages من إعدادات المستودع الخاص بك على GitHub.
+هذا المشروع هو صفحة رئيسية بسيطة تدعم تطبيق الويب التقدمي (PWA) وتعمل بدون اتصال بالإنترنت.
+
+## كيفية الاستخدام
+
+1. قم بنسخ المشروع إلى جهازك:
+    ```bash
+    git clone https://github.com/username/readhash.git
+    cd readhash
+    ```
+
+2. افتح الملف `index.html` في متصفحك.
+
+## الميزات
+
+- دعم تطبيق الويب التقدمي (PWA)
+- يعمل بدون اتصال بالإنترنت
+- يستخدم ثيم Cerulean من Bootswatch
+
+## الأقسام
+
+- **الرئيسية**: تحتوي على محتويات أساسية.
+- **التذييل**: يحتوي على حقوق النشر.
+
+## النشر
+
+يمكنك نشر هذا المشروع على GitHub Pages باتباع الخطوات التالية:
+
+1. قم بإنشاء مستودع جديد على GitHub.
+2. ادفع المشروع إلى المستودع:
+    ```bash
+    git remote add origin https://github.com/username/readhash.git
+    git branch -M main
+    git push -u origin main
+    ```
+3. قم بتمكين GitHub Pages من إعدادات المستودع.

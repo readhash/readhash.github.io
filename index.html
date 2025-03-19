@@ -3,12 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منصة التعليم الديني</title>
+    <title>صفحة رئيسية</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="theme.css"> <!-- إضافة رابط لملف الثيم -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.2/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.2/darkly/bootstrap.min.css">
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+
+        // تفعيل مكتبات القرآن والإنجيل والتوراة
+        function activateLibraries() {
+            console.log('تفعيل مكتبات القرآن والإنجيل والتوراة');
+            // تأكد من التفعيل
+            // ...إضافة أكواد التفعيل هنا...
+        }
+
+        window.addEventListener('load', activateLibraries);
+
+        // حفظ التغييرات بشكل لحظي
+        function saveChanges() {
+            const content = document.body.innerHTML;
+            localStorage.setItem('pageContent', content);
+        }
+
+        // استعادة التغييرات المحفوظة
+        function loadChanges() {
+            const savedContent = localStorage.getItem('pageContent');
+            if (savedContent) {
+                document.body.innerHTML = savedContent;
+            }
+        }
+
+        window.addEventListener('load', loadChanges);
+        window.addEventListener('input', saveChanges);
+    </script>
 </head>
 <body>
-    <div id="root"></div>
-    <script src="App.js"></script>
+    <header>
+        <h1>مرحبًا بكم في صفحتنا الرئيسية</h1>
+    </header>
+    <main>
+        <p>هذه الصفحة تحتوي على بعض المحتويات الأساسية.</p>
+        <section>
+            <h2>قرآن</h2>
+            <p>محتوى قسم القرآن.</p>
+            <script>
+                // تفعيل مكتبة القرآن
+                console.log('تفعيل مكتبة القرآن');
+                // ...إضافة أكواد التفعيل هنا...
+            </script>
+        </section>
+        <section>
+            <h2>إنجيل</h2>
+            <p>محتوى قسم الإنجيل.</p>
+            <script>
+                // تفعيل مكتبة الإنجيل
+                console.log('تفعيل مكتبة الإنجيل');
+                // ...إضافة أكواد التفعيل هنا...
+            </script>
+        </section>
+        <section>
+            <h2>توراة</h2>
+            <p>محتوى قسم التوراة.</p>
+            <script>
+                // تفعيل مكتبة التوراة
+                console.log('تفعيل مكتبة التوراة');
+                // ...إضافة أكواد التفعيل هنا...
+            </script>
+        </section>
+        <section>
+            <h2>مناظرات</h2>
+            <p>محتوى قسم المناظرات.</p>
+        </section>
+        <section>
+            <h2>تطوع</h2>
+            <p>محتوى قسم التطوع.</p>
+        </section>
+        <section>
+            <h2>عمل خيري</h2>
+            <p>محتوى قسم العمل الخيري.</p>
+        </section>
+    </main>
+    <footer>
+        <p>حقوق النشر © 2023</p>
+        <button onclick="saveChanges()">حفظ التغييرات</button>
+    </footer>
 </body>
 </html>
