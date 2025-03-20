@@ -62,3 +62,11 @@ Here are some ideas to get you started:
     git push -u origin main
     ```
 3. قم بتمكين GitHub Pages من إعدادات المستودع.
+
+# نشر الصفحة
+
+لحفظ التغييرات ونشر الصفحة، قم بتشغيل السكربت التالي:
+
+```bash
+bash publish.sh
+```

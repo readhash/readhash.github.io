@@ -175,6 +175,10 @@
             })
             .catch(error => console.error('فشل إرسال البريد الإلكتروني:', error));
         }
+
+        function openVolunteerForm() {
+            window.open('https://example.com/volunteer-form', '_blank');
+        }
     </script>
     <style>
         body {
@@ -307,6 +311,7 @@
         <section id="volunteer" style="display:none;">
             <h2>التطوع</h2>
             <p>محتوى قسم التطوع.</p>
+            <button onclick="openVolunteerForm()">فتح نموذج التسجيل</button>
         </section>
     </main>
     <footer>

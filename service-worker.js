@@ -28,3 +28,21 @@ self.addEventListener('fetch', function(event) {
             })
     );
 });
+
+console.log("New line added to service-worker.js");
+
+// إضافة كود لتحديث ذاكرة التخزين المؤقت عند نشر إصدار جديد
+self.addEventListener('activate', function(event) {
+    const cacheWhitelist = [CACHE_NAME];
+    event.waitUntil(
+        caches.keys().then(function(cacheNames) {
+            return Promise.all(
+                cacheNames.map(function(cacheName) {
+                    if (cacheWhitelist.indexOf(cacheName) === -1) {
+                        return caches.delete(cacheName);
+                    }
+                })
+            );
+        })
+    );
+});
