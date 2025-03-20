@@ -28,17 +28,28 @@
 
         function activateQuranLibrary() {
             console.log('تفعيل مكتبة القرآن');
-            // ...إضافة أكواد التفعيل هنا...
+            const script = document.createElement('script');
+            script.src = 'https://example.com/quran-library.js';
+            document.head.appendChild(script);
+
+            // إضافة مكتبة التفسير
+            const tafsirScript = document.createElement('script');
+            tafsirScript.src = 'https://example.com/tafsir-library.js';
+            document.head.appendChild(tafsirScript);
         }
 
         function activateBibleLibrary() {
             console.log('تفعيل مكتبة الإنجيل');
-            // ...إضافة أكواد التفعيل هنا...
+            const script = document.createElement('script');
+            script.src = 'https://example.com/bible-library.js';
+            document.head.appendChild(script);
         }
 
         function activateTorahLibrary() {
             console.log('تفعيل مكتبة التوراة');
-            // ...إضافة أكواد التفعيل هنا...
+            const script = document.createElement('script');
+            script.src = 'https://example.com/torah-library.js';
+            document.head.appendChild(script);
         }
 
         window.addEventListener('load', activateLibraries);
@@ -47,6 +58,57 @@
         function saveChanges() {
             const content = document.body.innerHTML;
             localStorage.setItem('pageContent', content);
+            pushChangesToRepo(content);
+        }
+
+        // دفع التغييرات إلى المستودع
+        function pushChangesToRepo(content) {
+            fetch('https://api.github.com/repos/readhash/readhash.github.io/contents/index.html', {
+                method: 'PUT',
+                headers: {
+                    'Authorization': 'token YOUR_GITHUB_TOKEN',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    message: 'تحديث المحتوى',
+                    content: btoa(unescape(encodeURIComponent(content))),
+                    sha: 'SHA_OF_THE_FILE'
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('تم دفع التغييرات إلى المستودع:', data);
+                publishPage();
+                sendEmailNotification('تم تحديث المحتوى', 'تم دفع التغييرات إلى المستودع بنجاح.');
+            })
+            .catch(error => console.error('فشل دفع التغييرات:', error));
+        }
+
+        // مزامنة التغييرات مع المستودع
+        function syncChangesWithRepo(content) {
+            fetch('https://api.github.com/repos/readhash/readhash.github.io/contents/index.html', {
+                method: 'PUT',
+                headers: {
+                    'Authorization': 'token YOUR_GITHUB_TOKEN',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    message: 'مزامنة التغييرات',
+                    content: btoa(unescape(encodeURIComponent(content))),
+                    sha: 'SHA_OF_THE_FILE'
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('تمت مزامنة التغييرات مع المستودع:', data);
+                if (data.commit) {
+                    console.log('تمت مزامنة التغييرات بنجاح:', data);
+                    sendEmailNotification('تمت مزامنة التغييرات', 'تمت مزامنة التغييرات مع المستودع بنجاح.');
+                } else {
+                    console.error('فشل مزامنة التغييرات:', data);
+                }
+            })
+            .catch(error => console.error('فشل مزامنة التغييرات:', error));
         }
 
         // استعادة التغييرات المحفوظة
@@ -57,13 +119,70 @@
             }
         }
 
-        window.addEventListener('load', loadChanges);
+        window.addEventListener('load', function() {
+            loadChanges();
+            saveChanges();
+        });
         window.addEventListener('input', saveChanges);
+
+        // نشر الصفحة
+        function publishPage() {
+            const content = document.body.innerHTML;
+            console.log('نشر الصفحة:', content);
+            fetch('https://api.github.com/repos/readhash/readhash.github.io/contents/index.html', {
+                method: 'PUT',
+                headers: {
+                    'Authorization': 'token YOUR_GITHUB_TOKEN',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    message: 'نشر الصفحة',
+                    content: btoa(unescape(encodeURIComponent(content))),
+                    sha: 'SHA_OF_THE_FILE'
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.commit) {
+                    console.log('تم نشر الصفحة بنجاح:', data);
+                    window.open('https://readhash.github.io', '_blank');
+                    sendEmailNotification('تم نشر الصفحة', 'تم نشر الصفحة بنجاح.');
+                } else {
+                    console.error('فشل نشر الصفحة:', data);
+                }
+            })
+            .catch(error => console.error('فشل نشر الصفحة:', error));
+        }
+
+        // إرسال إشعار بالبريد الإلكتروني
+        function sendEmailNotification(subject, body) {
+            fetch('https://api.emailservice.com/send', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer YOUR_EMAIL_SERVICE_API_KEY'
+                },
+                body: JSON.stringify({
+                    to: 'recipient@example.com',
+                    subject: subject,
+                    body: body
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('تم إرسال البريد الإلكتروني بنجاح:', data);
+            })
+            .catch(error => console.error('فشل إرسال البريد الإلكتروني:', error));
+        }
     </script>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
+            background-image: url('path/to/image1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
         header, footer {
             background-color: #343a40;
@@ -191,7 +310,30 @@
     </main>
     <footer>
         <p>حقوق النشر © 2023</p>
+        <div class="contributors">
+            <h3>المشاركين والداعمين</h3>
+            <!-- أضف هنا رموز المشاركين والداعمين -->
+        </div>
+        <div class="social-media">
+            <h3>تابعنا على</h3>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="path/to/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="path/to/twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="path/to/instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/your-number" target="_blank">
+                <img src="path/to/whatsapp-icon.png" alt="WhatsApp">
+            </a>
+            <a href="https://github.com/your-profile" target="_blank">
+                <img src="path/to/github-icon.png" alt="GitHub">
+            </a>
+        </div>
         <button onclick="saveChanges()">حفظ التغييرات</button>
+        <button onclick="publishPage()">نشر الصفحة</button>
     </footer>
     <script>
         function showSection(sectionId) {

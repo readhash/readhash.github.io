@@ -1,0 +1,7 @@
+body {
+    /* ...existing code... */
+    background-image: url('/path/to/islamic-background.jpg');
+    background-size: cover;
+    background-position: center;
+    /* ...existing code... */
+}
