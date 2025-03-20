@@ -63,6 +63,14 @@ Here are some ideas to get you started:
     ```
 3. قم بتمكين GitHub Pages من إعدادات المستودع.
 
+4. حل الاعتراضات:
+    ```bash
+    git pull origin main
+    git add .
+    git commit -m "حل الاعتراضات"
+    git push origin main
+    ```
+
 # نشر الصفحة
 
 لحفظ التغييرات ونشر الصفحة، قم بتشغيل السكربت التالي:
@@ -70,3 +78,24 @@ Here are some ideas to get you started:
 ```bash
 bash publish.sh
 ```
+
+# مزامنة الجلسة والنشر اللحظي
+
+للمزامنة مع المستودع والنشر بشكل لحظي، استخدم الأوامر التالية:
+
+1. قم بإعداد المزامنة التلقائية:
+    ```bash
+    git pull origin main
+    ```
+
+2. لمزامنة التغييرات بشكل لحظي:
+    ```bash
+    git add .
+    git commit -m "تحديثات لحظية"
+    git push origin main
+    ```
+
+3. لنشر الصفحة بعد المزامنة:
+    ```bash
+    bash publish.sh
+    ```

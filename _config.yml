@@ -3,3 +3,5 @@ description: >
   هذا القسم مخصص للقرآن الكريم.
 theme: jekyll-theme-minimal
 enabled: true
+url: "https://example.com"
+baseurl: "/quran"
