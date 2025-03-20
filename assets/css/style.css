@@ -1,0 +1,8 @@
+body {
+    /* ...existing code... */
+    background-image: url('../images/background.jpg'); /* تأكد من مسار الصورة */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* ...existing code... */
+}

@@ -5,3 +5,5 @@ theme: jekyll-theme-minimal
 enabled: true
 url: "https://example.com"
 baseurl: "/quran"
+repository: "readhash/readhash.github.io"
+branch: "main"
