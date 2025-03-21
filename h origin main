@@ -1,0 +1,131 @@
+[33mcommit 5ff4bc33fc6581541818138360987d15c145c33e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: readhash <dooornew@gmail.com>
+Date:   Thu Mar 20 22:04:10 2025 +0000
+
+    Add background image and update styles
+
+[33mcommit 6ec1297843bbcd086580137fa2af0358b6c79958[m
+Author: readhash <dooornew@gmail.com>
+Date:   Thu Mar 20 21:59:26 2025 +0200
+
+    Delete image1.jpg
+
+[33mcommit c11e2915d9fe1785856e5795ee8d1cee92d5f856[m
+Author: readhash <dooornew@gmail.com>
+Date:   Thu Mar 20 21:58:45 2025 +0200
+
+    Delete image/11
+
+[33mcommit c2febb6f048925921bfde23dce02d33adb4a709c[m
+Author: readhash <dooornew@gmail.com>
+Date:   Thu Mar 20 21:58:15 2025 +0200
+
+    Add files via upload
+
+[33mcommit 4b689d6ffc0aae1ff30d62a96bc6904e09047fa4[m
+Author: readhash <dooornew@gmail.com>
+Date:   Thu Mar 20 21:57:22 2025 +0200
+
+    Delete image/Screenshot_٢٠٢٥_٠٢١٣_٠٢٠٣١٦.jpg
+
+[33mcommit 1d674b2939a619b4c134904380d6aedfe64f7631[m
+Author: readhash <dooornew@gmail.com>
+Date:   Thu Mar 20 21:39:22 2025 +0200
+
+    Add files via upload
+
+[33mcommit 56e92f0e80912a365ded84ed049b1da2ddd526ad[m
+Author: readhash <dooornew@gmail.com>
+Date:   Thu Mar 20 21:36:24 2025 +0200
+
+    Create 11
+
+[33mcommit c9694b7cf0f114c900f75d9d1404ae3e57e5ebe7[m
+Author: readhash <dooornew@gmail.com>
+Date:   Thu Mar 20 05:41:32 2025 +0000
+
+    حفظ التغييرات بشكل لحظي
+
+[33mcommit e773901dd796948cce859a375da2796547328a56[m
+Author: readhash <dooornew@gmail.com>
+Date:   Thu Mar 20 05:04:34 2025 +0000
+
+    Update and publish site
+
+[33mcommit 86ad6973d06b48a8f86c07e56fde01084da2bf67[m
+Author: readhash <dooornew@gmail.com>
+Date:   Thu Mar 20 02:33:56 2025 +0000
+
+    Update _config.yml and publish site
+
+[33mcommit 4f45f2b5c1da0c2a65c5bb0b56025952dd164ecd[m
+Author: readhash <dooornew@gmail.com>
+Date:   Thu Mar 20 00:51:37 2025 +0000
+
+    إضافة أزرار لحفظ التغييرات ونشر الصفحة
+
+[33mcommit d454707cfd69608ef7051ef6d1ead5a815670e29[m
+Author: readhash <dooornew@gmail.com>
+Date:   Thu Mar 20 00:44:35 2025 +0000
+
+    تحديث index.html ونشر الصفحة
+
+[33mcommit 5ce1944e46922ec62139c77e4d3a294fab22862e[m
+Author: readhash <dooornew@gmail.com>
+Date:   Thu Mar 20 00:32:04 2025 +0000
+
+    إضافة أزرار لحفظ التغييرات ونشر الصفحة
+
+[33mcommit 0f9282ca4abceaa218e63ba1c7c4ec21e8c4c4e2[m
+Author: readhash <dooornew@gmail.com>
+Date:   Wed Mar 19 23:15:29 2025 +0200
+
+    Add files via upload
+
+[33mcommit 30443e6a4e62927a4ee3b4fac3f34c27b2669eff[m
+Author: readhash <dooornew@gmail.com>
+Date:   Wed Mar 19 20:03:48 2025 +0000
+
+    إضافة لمسات احترافية وصور دينية للموقع
+
+[33mcommit 27f7035ce6692b051425087332d21f3e789c5f3a[m
+Author: readhash <dooornew@gmail.com>
+Date:   Wed Mar 19 07:02:02 2025 +0000
+
+    حفظ التغييرات وإضافة زر لحفظ التغييرات في التذييل
+
+[33mcommit 9049c53c4a59ed14dc408530cd1633682f91162d[m
+Author: readhash <dooornew@gmail.com>
+Date:   Wed Mar 19 06:38:07 2025 +0000
+
+    حفظ التغييرات وإرسالها إلى المستودع
+
+[33mcommit d17e67dc71f76bdbe606741f7aa2d3bb578e3352[m
+Author: readhash <dooornew@gmail.com>
+Date:   Wed Mar 19 06:09:58 2025 +0000
+
+    تحديث package.json
+
+[33mcommit 8a1cab80b101ed8d72e5246647c4f0ffc2a63f88[m
+Author: readhash <dooornew@gmail.com>
+Date:   Wed Mar 19 05:38:08 2025 +0000
+
+    إضافة أزرار جديدة للتنقل إلى شاشات مختلفة
+
+[33mcommit 85398d93db37c631fd89fd78ce831714eae9a1eb[m
+Author: readhash <dooornew@gmail.com>
+Date:   Wed Mar 19 05:29:32 2025 +0000
+
+    إضافة زر جديد للتنقل إلى شاشة Hadith
+
+[33mcommit 6dbc77731529c3ea8fbf72df77b8685c9a455bab[m
+Author: readhash <dooornew@gmail.com>
+Date:   Wed Mar 19 05:15:11 2025 +0000
+
+    Add theme and update configuration
+
+[33mcommit a5d01eda578cbb3d0284cb9b3f522b2962b9abc9[m
+Author: readhash <dooornew@gmail.com>
+Date:   Wed Mar 19 03:12:20 2025 +0200
+
+    Initial commit
