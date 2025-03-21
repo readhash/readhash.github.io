@@ -3,7 +3,7 @@ description: >
   هذا القسم مخصص للقرآن الكريم.
 theme: jekyll-theme-minimal
 enabled: true
-url: "https://"
+url: "https://readhash.github.io/quran"
 readhash.github.io
 baseurl: "/quran"
 repository: "readhash/readhash.github.io"
