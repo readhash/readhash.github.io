@@ -5,13 +5,13 @@ import { Ionicons } from '@expo/vector-icons'; // استيراد أيقونات
 import HomeScreen from './screens/HomeScreen';
 import QuranScreen from './screens/QuranScreen';
 import BibleScreen from './screens/BibleScreen';
-import TorahScreen from './screens/TorahScreen';
 import LoginScreen from './screens/LoginScreen'; // استيراد شاشة تسجيل الدخول
 import RegisterScreen from './screens/RegisterScreen'; // استيراد شاشة التسجيل
 import EmailLoginScreen from './screens/EmailLoginScreen'; // استيراد شاشة تسجيل الدخول بالبريد الإلكتروني
 import QuranLibrary from './libraries/QuranLibrary'; // استيراد مكتبة القرآن الكريم
 import TafsirLibrary from './libraries/TafsirLibrary'; // استيراد مكتبة التفسير
 import HadithLibrary from './libraries/HadithLibrary'; // استيراد مكتبة الحديث النبوي
+import FiqhScreen from './screens/FiqhScreen'; // استيراد شاشة الفقه
 
 const Stack = createStackNavigator();
 
@@ -84,10 +84,10 @@ export default function App() {
           }} 
         />
         <Stack.Screen 
-          name="Torah" 
-          component={TorahScreen} 
+          name="Fiqh" 
+          component={FiqhScreen} 
           options={{ 
-            title: 'Torah', 
+            title: 'Fiqh', 
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="book" color={color} size={size} />
             ),

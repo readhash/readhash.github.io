@@ -4,7 +4,6 @@ description: >
 theme: jekyll-theme-minimal
 enabled: true
 url: "https://readhash.github.io/quran"
-readhash.github.io
 baseurl: "/quran"
 repository: "readhash/readhash.github.io"
 branch: "main"
