@@ -1,0 +1,21 @@
+{
+    "welcome": "Welcome to One World",
+    "platform_description": "A platform for learning about the divine religions",
+    "login": "Login",
+    "islamic": "Islamic",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "select_country": "Select Country",
+    "submit": "Submit",
+    "christian": "Christian",
+    "catholic": "Catholic",
+    "catholic_description": "Explore Catholic resources and libraries.",
+    "catholic_library": "Catholic Library",
+    "orthodox": "Orthodox",
+    "orthodox_description": "Explore Orthodox resources and libraries.",
+    "orthodox_library": "Orthodox Library",
+    "protestant": "Protestant",
+    "protestant_description": "Explore Protestant resources and libraries.",
+    "protestant_library": "Protestant Library"
+}

@@ -1,0 +1,21 @@
+{
+    "welcome": "مرحبًا بكم في عالم واحد",
+    "platform_description": "منصة لتعلم الأديان السماوية",
+    "login": "تسجيل الدخول",
+    "islamic": "الإسلامي",
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "select_country": "اختر الدولة",
+    "submit": "إرسال",
+    "christian": "المسيحي",
+    "catholic": "الكاثوليك",
+    "catholic_description": "استكشف موارد ومكتبات الكاثوليك.",
+    "catholic_library": "مكتبة الكاثوليك",
+    "orthodox": "الأرثوذكس",
+    "orthodox_description": "استكشف موارد ومكتبات الأرثوذكس.",
+    "orthodox_library": "مكتبة الأرثوذكس",
+    "protestant": "البروتستانت",
+    "protestant_description": "استكشف موارد ومكتبات البروتستانت.",
+    "protestant_library": "مكتبة البروتستانت"
+}
